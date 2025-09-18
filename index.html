@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jakub | IT Portfolio</title>
+  <link rel="stylesheet" href="Main.css" src="Main.js">
+
+</head>
+<body>
+  <nav>
+    <a href="#hero" class="nav-link">
+      <span class="nav-text">Home</span>
+      <span class="nav-icon">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+            <path d="M4 10L12 4L20 10" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 10V20H20V10" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+    </a>
+    <a href="#experience" class="nav-link">
+      <span class="nav-text">Experience</span>
+      <span class="nav-icon">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+            <rect x="3" y="7" width="18" height="13" rx="2" stroke="#fff" stroke-width="2"/>
+            <path d="M8 7V5a4 4 0 0 1 8 0v2" stroke="#fff" stroke-width="2"/>
+            <path d="M3 13h18" stroke="#fff" stroke-width="2"/>
+        </svg>
+      </span>
+    </a>
+    <a href="#projects" class="nav-link">
+      <span class="nav-text">Projects</span>
+      <span class="nav-icon">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+            <rect x="3" y="5" width="18" height="14" rx="2" stroke="#fff" stroke-width="2"/>
+            <path d="M8 21h8" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+            <path d="M12 17v4" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </span>
+    </a>
+    <a href="#contact" class="nav-link">
+      <span class="nav-text">Contact</span>
+      <span class="nav-icon">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+            <path d="M22 16.92V19a2 2 0 0 1-2.18 2A19.86 19.0 0 0 1 3 5.18 2 2 0 0 1 5 3h2.09a2 2 0 0 1 2 1.72c.13 1.13.37 2.24.72 3.32a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c1.08.35 2.19.59 3.32.72a2 2 0 0 1 1.72 2z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+    </a>
+  </nav>
+
+  <section id="hero" class="hero">
+    <img src="baple.png" alt="Profile Picture"></img>
+    <h1>Jakub</h1>
+    <p>IT Student & Developer</p>
+    <a href="CV.txt" download class="cv-download-btn">
+      <span class="cv-text">Download CV</span>
+      <span class="cv-icon">
+        <!-- Minimalist paper/download SVG -->
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+          <rect x="6" y="3" width="12" height="18" rx="2" stroke="#fff" stroke-width="2"/>
+          <path d="M12 8v6m0 0l-2-2m2 2l2-2" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+    </a>
+  </section>
+
+  <section id="experience">
+    <h2>Experience & Studies</h2>
+    <div class="tabs-group">
+      <div class="tabs">
+        <button class="nav-link tab-btn active" data-tab="work"><span class="tab-text">Experience</span></button>
+        <button class="nav-link tab-btn" data-tab="studies"><span class="tab-text">Studies</span></button>
+      </div>
+    </div>
+    <div id="work" class="tab-content">
+      <ul class="timeline">
+        <li>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2000 nieco</span>
+            <span class="timeline-role">GeWiS</span>
+            <span class="timeline-desc">Obrábač kovov</span>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">neskorsie</span>
+            <span class="timeline-role">Brose</span>
+            <span class="timeline-desc">Výpomoc</span>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Teraz</span>
+            <span class="timeline-role">Nezamestnany</span>
+            <span class="timeline-desc">Goonin</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="studies" class="tab-content hidden">
+      <ul class="timeline">
+        <li>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2022–2025</span>
+            <span class="timeline-role">BSc Computer Science, MUNI</span>
+            <span class="timeline-desc">Specialization: Networking</span>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023</span>
+            <span class="timeline-role">Online Courses</span>
+            <span class="timeline-desc">Networking, Linux, Web Development</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="project1.png" alt="Portfolio Website" class="project-img">
+        <div class="project-title">Blubery</div>
+      </div>
+      <div class="project-card">
+        <img src="project2.png" alt="Networking Analysis Tool" class="project-img">
+        <div class="project-title">Pajnaple</div>
+      </div>
+      <div class="project-card">
+        <img src="idk.png" alt="Shell Script System" class="project-img">
+        <div class="project-title">Mogple</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-buttons">
+      <a href="https://www.facebook.com/JMatesko" class="nav-link contact-btn">
+        <span class="contact-text">Facebook</span>
+    </a>
+      <a href="mailto:matiaskojakub17@gmail.com" class="nav-link contact-btn">
+        <span class="contact-text">Email</span>
+    </a>
+      <a href="https://www.linkedin.com/in/jakub-matia%C5%A1ko-2057aa351/" target="_blank" class="nav-link contact-btn">
+        <span class="contact-text">LinkedIn</span>
+    </a>
+      <a href="https://github.com/Matesk0" target="_blank" class="nav-link contact-btn">
+        <span class="contact-text">GitHub</span>
+    </a>
+      <a href="https://www.instagram.com/matesko_76/" target="_blank" class="nav-link contact-btn">
+        <span class="contact-text">Instagram</span>
+    </a>
+
+    </div>
+  </section>
+
+  <script src="Main.js"></script>
+</body>
+</html>
